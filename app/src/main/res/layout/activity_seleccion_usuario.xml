@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".SeleccionUsuarioActivity">
+
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="ceep.cgl.pyr.CabeceraFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_cabecera"
+        tools:layout_editor_absoluteX="68dp" />
+
+    <TextView
+        android:id="@+id/tv_MensajeSeleccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margen"
+        android:layout_marginLeft="@dimen/et_margen"
+        android:layout_marginTop="@dimen/et_margenTop"
+        android:text="@string/txt_usuario"
+        android:textSize="@dimen/ts_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment" />
+
+    <Spinner
+        android:id="@+id/sp_Usuarios"
+        android:layout_width="@dimen/et_ancho"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margen"
+        android:layout_marginLeft="@dimen/et_margen"
+        android:layout_marginTop="@dimen/et_margenTop"
+        android:background="@color/et_fondo"
+        android:textSize="@dimen/ts_field"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_MensajeSeleccion" />
+
+    <TextView
+        android:id="@+id/tv_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margen"
+        android:layout_marginLeft="@dimen/et_margen"
+        android:layout_marginTop="@dimen/et_margenTop"
+        android:text="@string/usuario"
+        android:textSize="@dimen/ts_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_Usuarios" />
+
+    <EditText
+        android:id="@+id/et_Usuario"
+        android:layout_width="@dimen/et_ancho"
+        android:layout_height="@dimen/et_alto"
+        android:layout_marginStart="@dimen/et_margen"
+        android:layout_marginLeft="@dimen/et_margen"
+        android:layout_marginTop="@dimen/et_margenTop"
+        android:autofillHints="Usuario"
+        android:background="@color/et_fondo"
+        android:hint="@string/hint_usuario"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/ts_field"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usuario" />
+
+    <TextView
+        android:id="@+id/tv_contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margen"
+        android:layout_marginLeft="@dimen/et_margen"
+        android:layout_marginTop="@dimen/et_margenTop"
+        android:text="@string/contrasena"
+        android:textSize="@dimen/ts_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Usuario" />
+
+    <EditText
+        android:id="@+id/et_Contrasena"
+        android:layout_width="@dimen/et_ancho"
+        android:layout_height="@dimen/et_alto"
+        android:layout_marginStart="@dimen/et_margen"
+        android:layout_marginLeft="@dimen/et_margen"
+        android:layout_marginTop="@dimen/et_margenTop"
+        android:autofillHints="Contrasena"
+        android:background="@color/et_fondo"
+        android:hint="@string/hint_contrasena"
+        android:inputType="textPersonName|textPassword"
+        android:textSize="@dimen/ts_field"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contrasena" />
+
+    <Button
+        android:id="@+id/btn_Usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_margenTop"
+        android:text="@string/btn_CrearUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Contrasena" />
+
+    <TextView
+        android:id="@+id/tv_Mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_margenTop"
+        android:textColor="@color/msg_text"
+        android:background="@color/msg_fondo"
+        android:textSize="@dimen/ts_msg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Usuario"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

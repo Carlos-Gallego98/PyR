@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="fondo">#C4ED92CC</color>
+    <color name="et_fondo">#FFFFFF</color>
+    <color name="tv_fondo">#C4A5648D</color>
+    <color name="msg_fondo">#ABB1AB</color>
+    <color name="msg_text">#AF3914</color>
+    <color name="selected">#E6E63C</color>
+</resources>

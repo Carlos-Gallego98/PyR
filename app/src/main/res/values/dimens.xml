@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ts_cabecera">23sp</dimen>
+    <dimen name="ts_label">16sp</dimen>
+    <dimen name="ts_msg">20sp</dimen>
+    <dimen name="ts_field">18sp</dimen>
+    <dimen name="ts_bigfield">28sp</dimen>
+    <dimen name="et_padding">5dp</dimen>
+    <dimen name="et_ancho">300dp</dimen>
+    <dimen name="et_alto">50dp</dimen>
+    <dimen name="et_margen">36dp</dimen>
+    <dimen name="et_margenTop">20dp</dimen>
+    <dimen name="ts_item">12sp</dimen>
+</resources>

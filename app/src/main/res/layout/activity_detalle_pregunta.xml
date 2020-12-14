@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context=".DetallePreguntaActivity">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="ceep.cgl.pyr.CabeceraFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_cabecera" />
+
+    <TextView
+        android:id="@+id/tv_TituloDetallePregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ts_cabecera"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ts_label"
+        android:text="@string/txt_pregunta" />
+
+    <EditText
+        android:id="@+id/et_Pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:textSize="@dimen/ts_field"
+        android:hint="@string/hint_pregunta"
+        android:background="@color/et_fondo"
+        android:padding="@dimen/et_padding"
+        android:inputType="textMultiLine|textPersonName" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ts_label"
+        android:text="@string/txt_categoria2" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/sp_Categorias2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ts_field"
+            android:background="@color/et_fondo"/>
+
+        <TextView
+            android:id="@+id/tv_Categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ts_field"
+            android:padding="@dimen/et_padding"
+            android:background="@color/tv_fondo"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ts_label"
+        android:text="@string/txt_respuestas" />
+
+    <EditText
+        android:id="@+id/et_Respuesta1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/et_fondo"
+        android:textSize="@dimen/ts_field"
+        android:hint="@string/hint_respuesta"
+        android:padding="@dimen/et_padding"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_Respuesta2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ts_field"
+        android:background="@color/et_fondo"
+        android:hint="@string/hint_respuesta"
+        android:padding="@dimen/et_padding"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_Respuesta3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ts_field"
+        android:background="@color/et_fondo"
+        android:hint="@string/hint_respuesta"
+        android:padding="@dimen/et_padding"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_Respuesta4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ts_field"
+        android:background="@color/et_fondo"
+        android:hint="@string/hint_respuesta"
+        android:padding="@dimen/et_padding"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ts_label"
+        android:text="@string/txt_solucion" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/sp_Solucion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ts_field"
+            android:background="@color/et_fondo"/>
+
+        <TextView
+            android:id="@+id/tv_Solucion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ts_field"
+            android:padding="@dimen/et_padding"
+            android:background="@color/tv_fondo"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/btn_Confirmar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/btn_Confirmar" />
+
+        <Space
+            android:id="@+id/Espacio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_Volver2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/btn_volver" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_Mensaje3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/msg_fondo"
+        android:textSize="@dimen/ts_msg"
+        android:textColor="@color/msg_text"/>
+</LinearLayout>

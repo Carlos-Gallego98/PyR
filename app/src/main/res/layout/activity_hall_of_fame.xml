@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context=".HallOfFameActivity">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/txt_hof"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_margenTop"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/et_margen"
+            android:layout_weight="1"
+            android:text="@string/txt_categoria2"
+            android:textSize="@dimen/ts_label" />
+
+        <TextView
+            android:id="@+id/tv_Categoria2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/et_fondo"
+            android:textSize="@dimen/ts_field" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/et_margen"
+            android:text="@string/txt_numpreguntas"
+            android:textSize="@dimen/ts_label" />
+
+        <TextView
+            android:id="@+id/tv_NumPreguntas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/et_fondo"
+            android:textSize="@dimen/ts_field" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margen"
+        android:text="@string/txt_cabecera_hof"
+        android:layout_marginTop="@dimen/et_margenTop"
+        android:layout_marginBottom="@dimen/et_margenTop"
+        android:textSize="@dimen/ts_field" />
+
+    <ListView
+        android:id="@+id/lv_Resultados"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Seguir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_otrapartida" />
+
+        <Button
+            android:id="@+id/btn_Salir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_salir" />
+    </LinearLayout>
+</LinearLayout>
